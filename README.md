@@ -1,2 +1,2 @@
 # game
-If you want to make snake water gun game you can refer code from here
+If you want to make stone paper scissor game you can refer code from here
