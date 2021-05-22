@@ -4,12 +4,18 @@ chances = 1
 total_chances = 11
 print(": Game start :  \n")
 sum1 = 0
-sum2 = 0
+sum2 = 0 
 while(chances<total_chances):
     # flag = 0
     
     import random 
     player = input("Player turn : stone[s] , paper[p] , scissor[sc] \n")
+    if(player == ""):
+        print("Wrong input take valid input\n")
+        continue 
+    if((player!='s' and player!='sc' and player!='p')):
+        print("Wrong input take valid input\n")
+        continue 
 
     print("Computer turn : stone , paper , scissor")
 
@@ -79,8 +85,6 @@ while(chances<total_chances):
         print("Tie")
     
 
-        
-
 if(sum1>sum2): 
     print("\t\t\t **player won the match**\n")
     print("Total score of player {}".format(sum1))
@@ -103,19 +107,9 @@ if(k==10):
     print("You rated {} = brillant game ".format(k))
 if((k ==9 or k==8 or k==7)):
     print("you rated {} = excellent ".format(k))
+if(k>10):
+    print("you rated more than {} = you love it".format(k))
 elif((k==6 or k==5 or k==4)):
     print("you rating {} = good,it can be more better".format(k))
 elif((k==3 or k==2 or k==1 or k==0)):
     print("you rated {} = bad game , what should i improve in game".format(k))
-    nl = input()
-    # flag = 0
-
-    # k = input("Do you want to play more yes/no : ")
-
-    # if(k=="yes"):
-    #     continue
-    # elif(k=="no"):
-    #     print("Good bye , see you next time ")
-    #     break
-    # else:
-    #     print("invalid")
