@@ -1,4 +1,4 @@
 # stone paper scissor
-Make simple stone paper sscissor game in python
+Make simple stone paper scissor game in python
 
 #game.py
